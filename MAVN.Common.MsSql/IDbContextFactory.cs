@@ -1,6 +1,6 @@
 ﻿using JetBrains.Annotations;
 
-namespace Lykke.Common.MsSql
+namespace MAVN.Common.MsSql
 {
     [PublicAPI]
     public interface IDbContextFactory<out T>

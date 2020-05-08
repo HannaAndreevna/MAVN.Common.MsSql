@@ -1,8 +1,8 @@
 using System;
-using Falcon.Numerics;
+using MAVN.Numerics;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace Lykke.Common.MsSql.Converters
+namespace MAVN.Common.MsSql.Converters
 {
     public class NullableMoney18PaddedConverter : ValueConverter<Money18?, string>
     {

@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
-namespace Lykke.Common.MsSql
+namespace MAVN.Common.MsSql
 {
     /// <summary>
     /// Fake sql context factory implementation for tests.
