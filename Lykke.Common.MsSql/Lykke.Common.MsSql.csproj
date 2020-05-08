@@ -35,7 +35,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Falcon.Numerics" Version="0.1.1" />
+        <PackageReference Include="MAVN.Numerics" Version="1.0.0" />
         <PackageReference Include="Microsoft.Data.SqlClient" Version="1.1.1" />
     </ItemGroup>
 

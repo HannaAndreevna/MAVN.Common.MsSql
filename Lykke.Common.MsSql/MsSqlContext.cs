@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Data.Common;
 using System.Linq;
-using Falcon.Numerics;
+using MAVN.Numerics;
 using JetBrains.Annotations;
 using Lykke.Common.MsSql.Attributes;
 using Lykke.Common.MsSql.Converters;
