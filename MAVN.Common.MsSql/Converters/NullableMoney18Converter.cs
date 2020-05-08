@@ -1,7 +1,7 @@
 using MAVN.Numerics;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace Lykke.Common.MsSql.Converters
+namespace MAVN.Common.MsSql.Converters
 {
     public class NullableMoney18Converter : ValueConverter<Money18?, string>
     {

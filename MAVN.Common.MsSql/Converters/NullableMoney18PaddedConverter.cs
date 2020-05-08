@@ -2,19 +2,22 @@ using System;
 using MAVN.Numerics;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace Lykke.Common.MsSql.Converters
+namespace MAVN.Common.MsSql.Converters
 {
-    public class Money18PaddedConverter : ValueConverter<Money18, string>
+    public class NullableMoney18PaddedConverter : ValueConverter<Money18?, string>
     {
-        public static readonly Money18PaddedConverter Instance = new Money18PaddedConverter();
+        public static readonly NullableMoney18PaddedConverter Instance = new NullableMoney18PaddedConverter();
 
-        private Money18PaddedConverter()
-            : base(v => ToPaddedString(v), v => ToMoney18(v))
+        private NullableMoney18PaddedConverter()
+            : base(v => ToPaddedString(v), v => ToNullableMoney18(v))
         {
         }
 
-        private static string ToPaddedString(Money18 money)
+        private static string ToPaddedString(Money18? money)
         {
+            if (!money.HasValue)
+                return null;
+
             var padFromLeft = 20;
             var padFromRight = 18;
             var delimiter = ".";
@@ -42,9 +45,9 @@ namespace Lykke.Common.MsSql.Converters
             return s;
         }
 
-        private static Money18 ToMoney18(string str)
+        private static Money18? ToNullableMoney18(string str)
         {
-            return Money18.Parse(str);
+            return string.IsNullOrWhiteSpace(str) ? default(Money18?) : Money18.Parse(str);
         }
     }
 }

@@ -1,10 +1,10 @@
 using System;
 using System.Data.Common;
 using System.Linq;
-using MAVN.Numerics;
 using JetBrains.Annotations;
-using Lykke.Common.MsSql.Attributes;
-using Lykke.Common.MsSql.Converters;
+using MAVN.Common.MsSql.Attributes;
+using MAVN.Common.MsSql.Converters;
+using MAVN.Numerics;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Diagnostics;
 using Microsoft.EntityFrameworkCore.Migrations;
@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Console;
 
-namespace Lykke.Common.MsSql
+namespace MAVN.Common.MsSql
 {
     [PublicAPI]
     public abstract class MsSqlContext : DbContext

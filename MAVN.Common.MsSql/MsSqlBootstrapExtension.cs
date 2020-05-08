@@ -4,7 +4,7 @@ using Autofac;
 using JetBrains.Annotations;
 using Microsoft.EntityFrameworkCore;
 
-namespace Lykke.Common.MsSql
+namespace MAVN.Common.MsSql
 {
     [PublicAPI]
     public static class MsSqlBootstrapExtension

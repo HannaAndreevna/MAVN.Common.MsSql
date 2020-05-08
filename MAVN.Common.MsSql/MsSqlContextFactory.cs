@@ -6,7 +6,7 @@ using JetBrains.Annotations;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
-namespace Lykke.Common.MsSql
+namespace MAVN.Common.MsSql
 {
     /// <summary>
     /// Factory for db context creation.

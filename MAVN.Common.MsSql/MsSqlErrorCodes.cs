@@ -1,4 +1,4 @@
-namespace Lykke.Common.MsSql
+namespace MAVN.Common.MsSql
 {
     /// <summary>
     /// Microsoft SQL Server error codes

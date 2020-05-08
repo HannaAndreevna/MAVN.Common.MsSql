@@ -1,6 +1,6 @@
 ﻿using System.Data.Common;
 
-namespace Lykke.Common.MsSql
+namespace MAVN.Common.MsSql
 {
     public class TransactionContext
     {
